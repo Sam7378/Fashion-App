@@ -10,7 +10,7 @@ const CartCard = ({ item, handleDelete }) => {
       <Image source={{ uri: item.image }} style={styles.image} />
       <View style={styles.content}>
         <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.price}>${item.price}</Text>
+        <Text style={styles.price}>₹{item.price}</Text>
         <View style={styles.textCircleContainer}>
           <View
             style={[styles.circle, { backgroundColor: item?.color || "red" }]}
