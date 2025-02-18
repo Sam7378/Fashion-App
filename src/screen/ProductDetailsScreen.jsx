@@ -30,10 +30,10 @@ const ProductDetailsScreen = () => {
     product.color = selectedColor;
     product.size = selectedSize;
     addToCartItem(product);
-    navigation.navigate("CART")
+    navigation.navigate("CART");
   };
   return (
-    <LinearGradient colors={["#FDF0F3", "#FFFBFC"]} style={styles.container}>
+    <LinearGradient colors={["#66787d", "#cfdcdf"]} style={styles.container}>
       <View style={styles.header}>
         <Header />
       </View>
@@ -43,7 +43,7 @@ const ProductDetailsScreen = () => {
       <View style={styles.contentContainer}>
         <View style={styles.textContainer}>
           <Text style={styles.fontText}>{product.title}</Text>
-          <Text style={styles.fontText}>${product.price}</Text>
+          <Text style={styles.fontText}>₹{product.price}</Text>
         </View>
         <Text style={[styles.fontText, styles.sizeText]}>Size</Text>
         {/* size container */}
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    padding: 15,
+    padding: 8,
   },
   imageContainer: {
     height: 420,
@@ -156,7 +156,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   contentContainer: {
-    padding: 20,
+    padding: 8,
   },
   textContainer: {
     flexDirection: "row",
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
     color: "#444444",
   },
   sizeText: {
-    marginTop: 20,
+    marginTop: 7,
   },
   sizeContainer: {
     flexDirection: "row",
@@ -178,7 +178,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   sizeValueContainer: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#ec4777",
     height: 40,
     width: 40,
     borderRadius: 20,
@@ -192,7 +192,7 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
   selectedText: {
-    color: "#E55B5B",
+    color: "#fff",
   },
   colorContainer: {
     flexDirection: "row",
@@ -209,14 +209,14 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#E96E6E",
-    height: 62,
+    height: 50,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 20,
-    marginTop: 20,
+    marginTop: 10,
   },
   buttonText: {
-    fontSize: 24,
+    fontSize: 20,
     color: "#FFFFFF",
     fontWeight: "700",
     fontFamily: fonts.regular,

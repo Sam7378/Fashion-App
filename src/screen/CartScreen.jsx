@@ -19,7 +19,7 @@ const CartScreen = () => {
     await deleteCartItem(id);
   };
   return (
-    <LinearGradient colors={["#FDF0F3", "#FFFBFC"]} style={styles.container}>
+    <LinearGradient colors={["#f0d58b", "#edede9"]} style={styles.container}>
       <View style={styles.header}>
         <Header isCart={true} />
       </View>
@@ -35,17 +35,17 @@ const CartScreen = () => {
             <View style={styles.bottomContentContainer}>
               <View style={styles.flexRowContainer}>
                 <Text style={styles.titleText}>Total:</Text>
-                <Text style={styles.priceText}>${totalPrice}</Text>
+                <Text style={styles.priceText}>₹{totalPrice}</Text>
               </View>
               <View style={styles.flexRowContainer}>
                 <Text style={styles.titleText}>Shpping:</Text>
-                <Text style={styles.priceText}>$0.0</Text>
+                <Text style={styles.priceText}>₹0.0</Text>
               </View>
               <View style={styles.divider} />
               <View style={styles.flexRowContainer}>
                 <Text style={styles.titleText}>Grand Total:</Text>
                 <Text style={[styles.priceText, styles.grandPriceText]}>
-                  ${totalPrice}
+                  ₹{totalPrice}
                 </Text>
               </View>
             </View>
@@ -77,12 +77,12 @@ const styles = StyleSheet.create({
   },
   titleText: {
     fontSize: 18,
-    color: "#757575",
+    color: "#1d1045",
     fontWeight: "500",
   },
   priceText: {
     fontSize: 18,
-    color: "#757575",
+    color: "#1d1045",
     fontWeight: "600",
   },
   divider: {
@@ -97,14 +97,14 @@ const styles = StyleSheet.create({
   },
   button: {
     backgroundColor: "#E96E6E",
-    height: 60,
+    height: 50,
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 20,
     marginTop: 30,
   },
   buttonText: {
-    fontSize: 24,
+    fontSize: 22,
     color: "#FFFFFF",
     fontWeight: "700",
     fontFamily: fonts.regular,

@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   sizeContainer: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#ededdf",
     height: 32,
     width: 32,
     borderRadius: 16,
